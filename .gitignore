@@ -1,0 +1,10 @@
+node_modules
+dist
+.tmp
+bower_components
+app/images
+app/videos
+other_documents
+back-ups
+test
+node_modules

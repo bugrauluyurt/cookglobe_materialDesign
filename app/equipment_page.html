@@ -1,0 +1,899 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>CookGlobe_Material</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- flat-icon start -->
+    <link rel="stylesheet" href="styles/flat_icons_final/flaticon.css">
+    <!-- flat-icon finish -->
+    <!-- font-awesome start -->
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <!-- font-awesome finish -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+      <!-- loader start -->
+      <div class="loader">
+        <div class="progress">
+            <div class="indeterminate"></div>
+        </div>
+      </div>
+      <!-- loader end -->
+
+      <div class="overlay visibility-hidden"></div>
+      
+      <header>
+        <div class="navigation-fixed">
+          <!-- header start -->
+          <div class="header-line"></div>
+
+          <nav>
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo"><img id="logo-img" src="images/logo_ver03.svg" alt="" style="max-height:65px"><p>CookGlobe</p></a>
+
+              <!-- Include this line below -->
+              <a class="button-collapse" href="#" data-activates="nav-mobile"><i class="mdi-navigation-menu"></i></a>
+              <!-- End -->
+
+              <ul class="right hide-on-med-and-down">
+                <li class="no-shadow">
+                  <a class='cuisines-menu-button' href='#' data-activates='cuisines-menu'><i style="float:left; display:block; margin-top:-5px; padding-right:10px" class="flaticon-covered18 hide-on-med-and-down"></i>World Cuisines</a>
+                  <ul id='cuisines-menu' class='dropdown-content'>
+                    <li><a href="#!">French Cuisine</a></li>
+                    <li><a href="#!">Italian Cuisine</a></li>
+                    <li><a href="#!">Chinese Cuisine</a></li>
+                    <li><a href="#!">Thai Cuisine</a></li>
+                    <li><a href="#!">Turkish Cuisine</a></li>
+                    <li><a href="#!">Indian Cuisine</a></li>
+                    <li><a href="#!">Mexican Cuisine</a></li>
+                    <li><a href="#!">Japanese Cuisine</a></li>
+                    <li><a href="#!">Spanish Cuisine</a></li>
+                    <li><a href="#!">Australian Cuisine</a></li>
+                    <li><a href="#!">S.African Cuisine</a></li>
+                    <li><a href="#!">Lebanese Cuisine</a></li>
+                  </ul>
+                </li>
+                
+                <li class="no-shadow"><a href="#">Recipes</a></li>
+
+                <li class="no-shadow"><a href="#">Ingredients</a></li>
+
+                <li class="no-shadow">
+                  <form class="input-form-header" method="get">
+                    <input id="search" type="search" name="" placeholder="Search Recipe / Ingredient" required>
+                    <label for="search"><i class="mdi-action-search"></i></label>
+                    <input type="submit" value="">
+                  </form>
+                </li>
+
+                <li class="no-shadow"><a class="login-modal modal-trigger" href="#login-modal">Log in</a></li>
+                
+                <li class="no-shadow">
+                  <a class="user-dropdown-button" href="#" data-activates="user-dropdown">Bugra Uluyurt<i class="mdi-action-account-circle right"></i></a>
+                  <ul id="user-dropdown" class="dropdown-content">
+                    <li><a href="#!"><i class="fa fa-user"></i>&nbsp My page</a></li>
+                    <li><a href="#!"><i class="mdi-action-settings"></i> Settings</a></li>
+                    <li><a href="#!"><i class="mdi-maps-local-restaurant"></i> Cookbook</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!"><i class="mdi-action-input"></i> Logout</a></li>
+                  </ul>
+                </li>
+                
+                <!--
+                <li class="no-shadow"><a class="btn register bg-red modal-trigger" href="#register-modal">Register</a></li>
+                -->
+              </ul>
+
+              <ul id="nav-mobile" class="right side-nav">
+
+                <li class="no-shadow">
+                  <a class='cuisines-menu-button' href='#' data-activates='cuisines-menu'><i style="float:left; display:block; margin-top:-5px; padding-right:10px" class="flaticon-covered18 hide-on-med-and-down"></i>World Cuisines</a>
+                  <ul id='cuisines-menu' class='dropdown-content'>
+                    <li><a href="#!">French Cuisine</a></li>
+                    <li><a href="#!">Italian Cuisine</a></li>
+                    <li><a href="#!">Chinese Cuisine</a></li>
+                    <li><a href="#!">Thai Cuisine</a></li>
+                    <li><a href="#!">Turkish Cuisine</a></li>
+                    <li><a href="#!">Indian Cuisine</a></li>
+                    <li><a href="#!">Mexican Cuisine</a></li>
+                    <li><a href="#!">Japanese Cuisine</a></li>
+                    <li><a href="#!">Spanish Cuisine</a></li>
+                    <li><a href="#!">Australian Cuisine</a></li>
+                    <li><a href="#!">S.African Cuisine</a></li>
+                    <li><a href="#!">Lebanese Cuisine</a></li>
+                  </ul>
+                </li>
+                
+                <li class="no-shadow"><a href="#">Recipes</a></li>
+
+                <li class="no-shadow"><a href="#">Ingredients</a></li>
+
+                <li class="no-shadow">
+                  <form class="input-form-header" method="get">
+                    <input id="search" type="search" name="" placeholder="Search Recipe / Ingredient" required>
+                    <label for="search"><i class="mdi-action-search"></i></label>
+                    <input type="submit" value="">
+                  </form>
+                </li>
+
+                <li class="no-shadow"><a class="login-modal modal-trigger" href="#login-modal">Log in</a></li>
+                
+                <li class="no-shadow">
+                  <a class="user-dropdown-button" href="#" data-activates="user-dropdown">Bugra Uluyurt<i class="mdi-action-account-circle right"></i></a>
+                  <ul id="user-dropdown" class="dropdown-content">
+                    <li><a href="#!"><i class="mdi-action-settings"></i> Settings</a></li>
+                    <li><a href="#!"><i class="mdi-maps-local-restaurant"></i> Cookbook</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!"><i class="mdi-action-input"></i> Logout</a></li>
+                  </ul>
+                </li>
+                
+                <!--
+                <li class="no-shadow"><a class="btn register bg-red modal-trigger" href="#register-modal">Register</a></li>
+                -->
+              </ul>
+            </div>
+          </nav>
+          <!-- header finish -->
+        </div>
+      </header>
+
+      <!-- registration modal start -->
+      <div id="register-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Register</h4>
+          
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="mdi-communication-email prefix"></i>
+                  <input id="icon_mail" type="text" class="validate" required>
+                  <label for="icon_mail">E-Mail</label>
+                </div>
+                <div class="input-field col s12">
+                  <i class="mdi-action-lock prefix"></i>
+                  <input id="icon_password" type="password" class="validate" required>
+                  <label for="icon_password">Password</label>
+                </div>
+                <div class="input-field col s12">
+                  <i class="mdi-action-lock-outline prefix"></i>
+                  <input id="icon_retype_password" type="password" class="validate" required>
+                  <label for="icon_retype_password">Re-type password</label>
+                </div>
+                <div class="col s12 register-submit-btn">
+                  <button class="btn waves-effect waves-light" type="submit" name="" value="">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close right">Close</a>
+        </div>
+      </div>
+      <!-- registration modal finish-->
+
+      <!-- login modal start -->
+      <div id="login-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+          <h4>Login</h4>
+          
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="mdi-communication-email prefix"></i>
+                  <input id="login_icon_mail" type="text" class="validate">
+                  <label for="login_icon_mail">E-Mail</label>
+                </div>
+                <div class="input-field col s12">
+                  <i class="mdi-action-lock prefix"></i>
+                  <input id="login_icon_password" type="password" class="validate">
+                  <label for="login_icon_password">Password</label>
+                </div>
+                <div class="col s12 register-submit-btn">
+                  <button class="btn waves-effect waves-light" type="submit" name="" value="">Login</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        
+        </div>
+        <div class="modal-footer">
+          <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close right">Close</a>
+        </div>
+      </div>
+      <!-- login modal finish-->
+    
+      <main>
+        <div class="row blank-space"></div>
+        
+        <!-- showcase start -->
+        <div class="item-main" style="max-width:1250px; margin:0 auto; padding-left:10px; padding-right:10px">
+          <div class="row">
+            <!-- item header start -->
+            <div class="col s12">
+              <h3>Cleaver</h3>&nbsp&nbsp<h5 class="text-logo-color">equipments</h5>
+            </div>
+            <!-- item header end -->
+
+            <div class="rating-social col l1 m12 s12">
+              <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="right" data-delay="10" data-tooltip="Attach to your cookbook"><i class="fa fa-plus"></i></a>
+              <a class="btn-floating btn-large waves-effect waves-light white tooltipped" data-position="right" data-delay="10" data-tooltip="Click to like!"><i class="mdi-action-thumb-up gray-text"></i></a>
+              <a class="btn-floating btn-large waves-effect waves-light white tooltipped" data-position="right" data-delay="10" data-tooltip="Share on facebook"><i class="fa fa-facebook gray-text"></i></a>
+              <a class="btn-floating btn-large waves-effect waves-light white tooltipped" data-position="right" data-delay="10" data-tooltip="Share on twitter"><i class="fa fa-twitter gray-text"></i></a>
+              <a class="btn-floating btn-large waves-effect waves-light white tooltipped" data-position="right" data-delay="10" data-tooltip="Share on pinterest"><i class="fa fa-pinterest gray-text"></i></a>
+            </div>
+
+            <!-- main-image and description start -->
+            <div class="main-column col l5 m12 s12">
+              <div class="card-col-1 card col s12 m6 l12 p-0">
+                <div class="card-image lh-05 main-column-1 col l12 m6 pr-0 pl-0">
+                  <!-- Embed Video Start (Use of it is a embedded video)
+                  <div class="video-container">
+                    <iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  Embed Video End (Use if it is a embedded video)-->
+
+                  <!-- Static Video Start (Use of it is a static video)
+                  <div class="static-video">
+                    <video class="responsive-video" controls>
+                      <source src="videos/movie.mp4" type="video/mp4">
+                    </video>
+                  </div>
+                  Static Video End (Use if it is a static video)-->
+
+                  <!-- Image Start -->
+                  <img src="images/equipments/equipment-5.jpg">
+                  <div class="card-order"><i class="flaticon-cooking"></i></div>
+                  <!-- Image End -->
+                </div>
+                <div class="card-content main-column-2 col l12 m6 pb-30">
+                  <div class="food-card"> 
+                    by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                    <a class="cuisine-name" href="#"><img src="images/flags/no-flag.png" alt=""> Cuisine information not available for equipments</a>
+                    <div class="cuisine-image">
+                      <img src="images/user-images/user-11.jpg" style="max-width:40px" class="circle" alt="">
+                    </div><br><br>
+                    <p>Hacking through bone or slicing large vegetables (such as squash). The knife's broad side can also be used for crushing in food preparation (such as garlic).</p>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="#" class="right"></a>
+                </div>
+              </div>
+
+              <div class="card-col-2 col s12 m6 l12 p-0">
+                <div class="col s12 p-0">
+                  <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                      <div class="collapsible-header"><i class="mdi-maps-restaurant-menu"></i>About this equipment</div>
+                      <div class="collapsible-body">
+                        <p>Description of the equipment can be written here</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>  
+
+                <form class="col s12 p-0">
+                  <div class="row">
+                    <div class="col s12 p-0">
+                      <h5>Comments</h5>
+                    </div>
+                    <div class="input-field col s12">
+                      <i class="mdi-editor-mode-edit prefix"></i>
+                      <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                      <label for="icon_prefix2">Write comment</label>
+                    </div>
+                    <div class="col s12 submit-comment">
+                      <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>  
+            </div>
+            <!-- main-image and description end -->
+
+            <div class="ingredients-column-2 col l3 m6 s12">
+
+              <div class="similar-items row z-depth-1 card white pt-30 pb-50 pl-10 pr-10">
+                <h5 class="card-header"><i class="flaticon-cooking"></i>&nbsp Similar Equipments</h5>
+
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-1.jpg)'></div>
+                  <p class="w100">Equipment 1</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-2.jpg)'></div>
+                  <p class="w100">Equipment 2</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-3.jpg)'></div>
+                  <p class="w100">Equipment 3</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-4.jpg)'></div>
+                  <p class="w100">Equipment 4</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-5.jpg)'></div>
+                  <p class="w100">Equipment 5</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-6.jpg)'></div>
+                  <p class="w100">Equipment 6</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-7.jpg)'></div>
+                  <p class="w100">Equipment 7</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-8.jpg)'></div>
+                  <p class="w100">Equipment 8</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-9.jpg)'></div>
+                  <p class="w100">Equipment 9</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-10.jpg)'></div>
+                  <p class="w100">Equipment 10</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-11.jpg)'></div>
+                  <p class="w100">Equipment 11</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-12.jpg)'></div>
+                  <p class="w100">Equipment 12</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-1.jpg)'></div>
+                  <p class="w100">Equipment 13</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-2.jpg)'></div>
+                  <p class="w100">Equipment 14</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-3.jpg)'></div>
+                  <p class="w100">Equipment 15</p>
+                </div>
+                <div class="col m3 s6" onclick="location.href='#';">
+                  <div class="circular-image-2 grayscale" style='background-image: url(images/equipments/equipment-4.jpg)'></div>
+                  <p class="w100">Equipment 16</p>
+                </div>
+                <div class="equipments-pagination">
+                  Pagination should be written here
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <!-- showcase end -->
+        
+        <!-- Similars filter start -->
+        <div class="row filter-row white pt-15">
+          <div class="col s12 popular-header">
+            <h5><i class="flaticon-chef26 flaticon-large"></i><br>Recipes including "cleaver"</h5><h6 style="text-decoration:underline">filter your results by using the given options below:</h6>
+          </div>
+          <div class="col s12">
+            <div class="filter">
+              <form action="#">
+                <div class="col m2 s6">
+                  <p>
+                    <input type="checkbox" id="test1" checked="checked"/>
+                    <label for="test1">French</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="test2" checked="checked"/>
+                    <label for="test2">Italian</label>
+                  </p>
+                </div>
+                <div class="col m2 s6">
+                  <p>
+                    <input type="checkbox" id="test3" checked="checked"/>
+                    <label for="test3">Chinese</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="test5" checked="checked"/>
+                    <label for="test5">Thai</label>
+                  </p>
+                </div>  
+                <div class="col m2 s6">  
+                  <p>
+                    <input type="checkbox" id="test6" checked="checked"/>
+                    <label for="test6">Turkish</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="test7" checked="checked"/>
+                    <label for="test7">Indian</label>
+                  </p>
+                </div>
+                <div class="col m2 s6"> 
+                  <p>
+                    <input type="checkbox" id="test8" checked="checked"/>
+                    <label for="test8">Mexican</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="test9" />
+                    <label for="test9">Japanese</label>
+                  </p>
+                </div>
+                <div class="col m2 s6">
+                  <p>
+                    <input type="checkbox" id="test10" />
+                    <label for="test10">Spanish</label>
+                  </p>  
+                  <p>
+                    <input type="checkbox" id="test11" />
+                    <label for="test11">Australian</label>
+                  </p>
+                </div>
+                <div class="col m2 s6">
+                  <p>
+                    <input type="checkbox" id="test12" />
+                    <label for="test12">S.African</label>
+                  </p>
+                  <p>
+                    <input type="checkbox" id="test13" />
+                    <label for="test13">Lebanese</label>
+                  </p>
+                </div>
+                <div class="col s12 type-filter">
+                  <div>
+                    <p>
+                      <input name="group1" type="radio" id="test14" />
+                      <label for="test14">Recipes</label>
+                    </p>
+                    <p>
+                      <input name="group1" type="radio" id="test15" />
+                      <label for="test15">Ingredients</label>
+                    </p>
+                    <p>
+                      <input class="with-gap" name="group1" type="radio" id="test16"  />
+                      <label for="test16">Both</label>
+                    </p>
+                  </div>
+                </div>  
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Similars filter finish -->
+
+        <!-- similars start -->
+        <div class="row white mb-0">
+          <div class="tiles">
+            <!-- Top12 product 1 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-1.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">1</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/south-africa.png" alt=""> South African Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-11.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-add"></i> Append</a>
+                  <a class="right orange-text">Recipe</a>
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 1 finish -->
+
+            <!-- Top12 product 2 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-2.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">2</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/italy.png" alt=""> Italian Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-12.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-remove"></i> Remove</a>
+                  <a class="right teal-text">Ingredient</a>      
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 2 finish -->
+
+            <!-- Top12 product 3 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-3.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">3</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/china.png" alt=""> Chinese Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-2.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-add"></i> Append</a>
+                  <a class="right orange-text">Recipe</a>      
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 3 finish -->
+
+            <!-- Top12 product 4 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-4.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">4</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/japan.png" alt=""> Japanese Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-3.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-remove"></i> Remove</a>
+                  <a class="right teal-text">Ingredient</a>      
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 4 finish -->
+            
+            <!-- Top12 product 5 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-5.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">5</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/taiwan.png" alt=""> Thai Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-4.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-add"></i> Append</a>
+                  <a class="right orange-text">Recipe</a>      
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 5 finish -->
+
+            <!-- Top12 product 6 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-6.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">6</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/france.png" alt=""> French Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-5.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-remove"></i> Remove</a>
+                  <a class="right teal-text">Ingredient</a>      
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 6 finish -->
+
+            <!-- Top12 product 7 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-7.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">7</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/italy.png" alt=""> Italian Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-6.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-add"></i> Append</a>
+                  <a class="right orange-text">Recipe</a>      
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 7 finish -->
+
+            <!-- Top12 product 8 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-8.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">8</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/turkey.png" alt=""> Turkish Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-7.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-remove"></i> Remove</a>
+                  <a class="right teal-text">Ingredient</a>      
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 8 finish -->
+
+            <!-- Top12 product 9 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-1.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">9</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/south-africa.png" alt=""> South African Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-11.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-add"></i> Append</a>
+                  <a class="right orange-text">Recipe</a>      
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 9 finish -->
+
+            <!-- Top12 product 10 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-2.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">10</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/italy.png" alt=""> Italian Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-12.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-add"></i> Append</a>
+                  <a class="right orange-text">Recipe</a>      
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 10 finish -->
+
+            <!-- Top12 product 11 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-3.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">11</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/china.png" alt=""> Chinese Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-2.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-add"></i> Append</a>
+                  <a class="right teal-text">Ingredient</a>      
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 11 finish -->
+
+            <!-- Top12 product 12 start -->
+            <div class="col m6 l3" onclick="location.href='#';">
+              <div class="card small">
+                <div class="card-image">
+                  <img src="images/gallery/gallery-4.jpg">
+                  <a class="card-title tile-card" href="#">Lorem ipsum dolor</a>
+                  <div class="card-order">12</div>
+                </div>
+                <div class="card-content">
+                  <div class="food-card"> 
+                        by <a class="user-name" href="#">Bugra Uluyurt</a><br>
+                        <a class="cuisine-name" href="#"><img src="images/flags/japan.png" alt=""> Japanese Cuisine</a>
+                        <div class="cuisine-image">
+                          <img src="images/user-images/user-3.jpg" style="max-width:40px" class="circle" alt="">
+                        </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a href="http://www.google.com" class="left grey-text"><i class="mdi-content-remove"></i> Remove</a>
+                  <a class="right orange-text">Recipe</a>      
+                </div>
+              </div>
+            </div>
+            <!-- Top12 product 12 finish -->
+
+          </div>
+        </div>
+        <!-- similars finish -->
+
+        <!-- pagination start -->
+        <div class="row pagination-row">
+          <div class="pagination-in" id="pagination">Pagination should be put here</div>
+        </div>
+        <!-- pagination end -->
+
+        <!-- Fixed action button start-->
+        <div class="fixed-action-btn" style="bottom: 15px; right: 35px;">
+          <a class="btn-floating btn-large red logo-color">
+            <i class="fa fa-user"></i>
+          </a>
+          <ul>
+            <li><a class="btn-floating teal lighten-2 tooltipped" data-position="left" data-delay="2" data-tooltip="Upload item"><i class="large mdi-file-file-upload"></i></a></li>
+            <li><a class="btn-floating orange tooltipped" data-position="left" data-delay="2" data-tooltip="Cookbook"><i class="large mdi-maps-local-restaurant"></i></a></li>
+            <li><a class="btn-floating grey tooltipped" data-position="left" data-delay="2" data-tooltip="Settings"><i class="large mdi-action-settings"></i></a></li>
+          </ul>
+        </div>
+        <!-- Fixed action button finish-->
+
+      </main>
+
+      <footer class="page-footer mt-0">
+        <div class="container">
+          <div class="row">
+            <div class="col l4 s12">
+              <h5 class="white-text">Build your cookbook</h5>
+              <p class="text-white">Ready to build your own CookBook?<br>Take your cooking skills to the next level.</p>
+              <!--
+              <a class="waves-effect waves-light btn"><i class="mdi-social-person-add left"></i>Sign up</a>
+              -->
+              <a class="waves-effect waves-light btn"><i class="mdi-maps-local-restaurant left"></i>Your cookbook</a>
+            </div>
+            <div class="col l2 s12 mobile-buttons">
+              <h5 class="white-text"></h5>
+              <h5 class="white-text">Soon on</h5>
+              <img class="responsive-img" src="images/googleplay-btn.svg" alt="">
+              <img class="responsive-img" src="images/applestore-btn.svg" alt="">
+            </div>
+            <div class="col l6 s12">
+              <div class="footer-header"><h5 class="white-text">Cuisines</h5></div>
+              <div class="col s4">
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">French <span class="hide-on-small-only">Cuisine</span></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Italian <span class="hide-on-small-only">Cuisine</span></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Chinese <span class="hide-on-small-only">Cuisine</span></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Thai <span class="hide-on-small-only">Cuisine</span></a></li>
+                </ul>
+              </div>
+              <div class="col s4">
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Turkish <span class="hide-on-small-only">Cuisine</span></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Indian <span class="hide-on-small-only">Cuisine</span></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Mexican <span class="hide-on-small-only">Cuisine</span></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Japanese <span class="hide-on-small-only">Cuisine</span></a></li>
+                </ul>
+              </div>
+              <div class="col s4">
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Spanish <span class="hide-on-small-only">Cuisine</span></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Australian <span class="hide-on-small-only">Cuisine</span></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">S.African <span class="hide-on-small-only">Cuisine</span></a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Lebanese <span class="hide-on-small-only">Cuisine</span></a></li>
+                </ul>
+              </div>   
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <span class="hide-on-small-only">© 2015 Copyright Cookglobe</span>
+            <a class="grey-text text-lighten-4 right" href="#!">Privacy policy</a>
+            <a class="grey-text text-lighten-4 right" href="#!">Terms of use</a>
+          </div>
+        </div>
+      </footer>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/materialize/bin/materialize.js"></script>
+    <script src="bower_components/jquery.dotdotdot/src/js/jquery.dotdotdot.js"></script>
+    <script src="bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    -->
+
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({app,.tmp}) scripts/jquery.counterup.min.js -->
+    <script src="scripts/jquery.counterup.min.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

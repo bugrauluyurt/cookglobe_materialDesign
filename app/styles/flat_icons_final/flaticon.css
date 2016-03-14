@@ -1,0 +1,521 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+}.flaticon-australia:before {
+	content: "\e000";
+}
+.flaticon-baby109:before {
+	content: "\e001";
+}
+.flaticon-banes:before {
+	content: "\e002";
+}
+.flaticon-barbecue1:before {
+	content: "\e003";
+}
+.flaticon-barbecue5:before {
+	content: "\e004";
+}
+.flaticon-big17:before {
+	content: "\e005";
+}
+.flaticon-blackberry1:before {
+	content: "\e006";
+}
+.flaticon-bowl:before {
+	content: "\e007";
+}
+.flaticon-bowl10:before {
+	content: "\e008";
+}
+.flaticon-bowl2:before {
+	content: "\e009";
+}
+.flaticon-bowl3:before {
+	content: "\e00a";
+}
+.flaticon-bowl4:before {
+	content: "\e00b";
+}
+.flaticon-bowl6:before {
+	content: "\e00c";
+}
+.flaticon-carrot1:before {
+	content: "\e00d";
+}
+.flaticon-castle3:before {
+	content: "\e00e";
+}
+.flaticon-cauldron:before {
+	content: "\e00f";
+}
+.flaticon-cheese4:before {
+	content: "\e010";
+}
+.flaticon-chef:before {
+	content: "\e011";
+}
+.flaticon-chef10:before {
+	content: "\e012";
+}
+.flaticon-chef10.flat-xlarge:before {
+	font-size:50px !important;
+}
+.flaticon-chef26:before {
+	content: "\e013";
+}
+.flaticon-chef26.flaticon-large:before {
+	content: "\e013";
+	font-size:70px;
+}
+.flaticon-chiang1:before {
+	content: "\e014";
+}
+.flaticon-chili:before {
+	content: "\e015";
+}
+.flaticon-chilis:before {
+	content: "\e016";
+}
+.flaticon-china:before {
+	content: "\e017";
+}
+.flaticon-chinese11:before {
+	content: "\e018";
+}
+.flaticon-chinese13:before {
+	content: "\e019";
+}
+.flaticon-chinese2:before {
+	content: "\e01a";
+}
+.flaticon-chopsticks1:before {
+	content: "\e01b";
+}
+.flaticon-cob1:before {
+	content: "\e01c";
+}
+.flaticon-coffee37:before {
+	content: "\e01d";
+}
+.flaticon-coffee50:before {
+	content: "\e01e";
+}
+.flaticon-cooking:before {
+	content: "\e01f";
+}
+.flaticon-cooking12:before {
+	content: "\e020";
+}
+.flaticon-cooking13:before {
+	content: "\e021";
+}
+.flaticon-cooking14:before {
+	content: "\e022";
+}
+.flaticon-cooking17:before {
+	content: "\e023";
+}
+.flaticon-cooking18:before {
+	content: "\e024";
+}
+.flaticon-cooking18.flaticon-large:before {
+	content: "\e024";
+	font-size:90px;
+}
+.flaticon-cooking5:before {
+	content: "\e025";
+}
+.flaticon-cooking6:before {
+	content: "\e026";
+}
+.flaticon-covered1:before {
+	content: "\e027";
+}
+.flaticon-covered18:before {
+	content: "\e028";
+}
+.flaticon-cutlery1:before {
+	content: "\e029";
+}
+.flaticon-cutlery16:before {
+	content: "\e02a";
+}
+.flaticon-cutlery20:before {
+	content: "\e02b";
+}
+.flaticon-cutlery3:before {
+	content: "\e02c";
+}
+.flaticon-cutlery6:before {
+	content: "\e02d";
+}
+.flaticon-cutlery6.desc-icon:before {
+	content: "\e02d";
+	font-size:25px;
+	color:#5f5f5f;
+}
+.flaticon-cutlery7:before {
+	content: "\e02e";
+}
+.flaticon-cutted1:before {
+	content: "\e02f";
+}
+.flaticon-cutted1.desc-icon:before {
+	content: "\e02f";
+	font-size:25px;
+	color:#5f5f5f;
+}
+.flaticon-dark54:before {
+	content: "\e030";
+}
+.flaticon-earth15:before {
+	content: "\e031";
+}
+.flaticon-earth161:before {
+	content: "\e032";
+}
+.flaticon-earth186:before {
+	content: "\e033";
+}
+.flaticon-earth193:before {
+	content: "\e034";
+}
+.flaticon-earth22:before {
+	content: "\e035";
+}
+.flaticon-eating:before {
+	content: "\e036";
+}
+.flaticon-eggs:before {
+	content: "\e037";
+}
+.flaticon-eggs.desc-icon:before {
+	content: "\e037";
+	font-size:25px;
+	color:#5f5f5f;
+}
+.flaticon-eiffel3:before {
+	content: "\e038";
+}
+.flaticon-eiffel4:before {
+	content: "\e039";
+}
+.flaticon-flame:before {
+	content: "\e03a";
+}
+.flaticon-flame.desc-icon:before {
+	content: "\e03a";
+	font-size:25px;
+	color:#5f5f5f;
+}
+.flaticon-flat17:before {
+	content: "\e03b";
+}
+.flaticon-flowers6:before {
+	content: "\e03c";
+}
+.flaticon-food10:before {
+	content: "\e03d";
+}
+.flaticon-food14:before {
+	content: "\e03e";
+}
+.flaticon-food14.flaticon-large:before {
+	content: "\e03e";
+	font-size:70px;
+}
+.flaticon-food27:before {
+	content: "\e03f";
+}
+.flaticon-food31:before {
+	content: "\e040";
+}
+.flaticon-food7:before {
+	content: "\e041";
+}
+.flaticon-fork:before {
+	content: "\e042";
+}
+.flaticon-fork31:before {
+	content: "\e043";
+}
+.flaticon-fork4:before {
+	content: "\e044";
+}
+.flaticon-fork6:before {
+	content: "\e045";
+}
+.flaticon-four64:before {
+	content: "\e046";
+}
+.flaticon-four64.flaticon-large:before {
+	content: "\e046";
+	font-size:80px;
+}
+.flaticon-france:before {
+	content: "\e047";
+}
+.flaticon-french1:before {
+	content: "\e048";
+}
+.flaticon-french3:before {
+	content: "\e049";
+}
+.flaticon-frying:before {
+	content: "\e04a";
+}
+.flaticon-frying1:before {
+	content: "\e04b";
+}
+.flaticon-globe2:before {
+	content: "\e04c";
+}
+.flaticon-guacamole:before {
+	content: "\e04d";
+}
+.flaticon-hat9:before {
+	content: "\e04e";
+}
+.flaticon-horseman1:before {
+	content: "\e04f";
+}
+.flaticon-hot:before {
+	content: "\e050";
+}
+.flaticon-hot12:before {
+	content: "\e051";
+}
+.flaticon-hot22:before {
+	content: "\e052";
+}
+.flaticon-hot36:before {
+	content: "\e053";
+}
+.flaticon-hot54:before {
+	content: "\e054";
+}
+.flaticon-hot60:before {
+	content: "\e055";
+}
+.flaticon-india:before {
+	content: "\e056";
+}
+.flaticon-india3:before {
+	content: "\e057";
+}
+.flaticon-italian1:before {
+	content: "\e058";
+}
+.flaticon-italy:before {
+	content: "\e059";
+}
+.flaticon-italy1:before {
+	content: "\e05a";
+}
+.flaticon-japan22:before {
+	content: "\e05b";
+}
+.flaticon-japan26.cuisine-page-icon:before {
+	content: "\e05c";
+	font-size:150px;
+}
+.flaticon-japan26:before {
+	content: "\e05c";
+}
+.flaticon-japan42:before {
+	content: "\e05d";
+}
+.flaticon-japan52:before {
+	content: "\e05e";
+}
+.flaticon-japan52.cuisine-page-icon:before {
+	content: "\e05e";
+	font-size:100px;
+}
+.flaticon-japan58:before {
+	content: "\e05f";
+}
+.flaticon-japan58.cuisine-page-icon:before {
+	content: "\e05f";
+	font-size:100px;
+}
+.flaticon-japan9:before {
+	content: "\e060";
+}
+.flaticon-japanese1:before {
+	content: "\e061";
+}
+.flaticon-kitchen26:before {
+	content: "\e062";
+}
+.flaticon-lebanon:before {
+	content: "\e063";
+}
+.flaticon-maki:before {
+	content: "\e064";
+}
+.flaticon-mexican7:before {
+	content: "\e065";
+}
+.flaticon-mexico:before {
+	content: "\e066";
+}
+.flaticon-napoleon:before {
+	content: "\e067";
+}
+.flaticon-noodle1:before {
+	content: "\e068";
+}
+.flaticon-noodles:before {
+	content: "\e069";
+}
+.flaticon-oriental:before {
+	content: "\e06a";
+}
+.flaticon-ornamental5:before {
+	content: "\e06b";
+}
+.flaticon-peach:before {
+	content: "\e06c";
+}
+.flaticon-peanuts1:before {
+	content: "\e06d";
+}
+.flaticon-pinchito:before {
+	content: "\e06e";
+}
+.flaticon-pins62:before {
+	content: "\e06f";
+}
+.flaticon-pizza2:before {
+	content: "\e070";
+}
+.flaticon-plate16:before {
+	content: "\e071";
+}
+.flaticon-plate7:before {
+	content: "\e072";
+}
+.flaticon-restaurant2:before {
+	content: "\e073";
+}
+.flaticon-restaurant29:before {
+	content: "\e074";
+}
+.flaticon-restaurant31:before {
+	content: "\e075";
+}
+.flaticon-restaurant34:before {
+	content: "\e076";
+}
+.flaticon-rice:before {
+	content: "\e077";
+}
+.flaticon-rice2:before {
+	content: "\e078";
+}
+.flaticon-rize:before {
+	content: "\e079";
+}
+.flaticon-simple3:before {
+	content: "\e07a";
+}
+.flaticon-soup3:before {
+	content: "\e07b";
+}
+.flaticon-south4:before {
+	content: "\e07c";
+}
+.flaticon-south4.flaticon-xlarge:before {
+	content: "\e07c";
+	font-size:50px;
+}
+.flaticon-spaghetti1:before {
+	content: "\e07d";
+}
+.flaticon-spain:before {
+	content: "\e07e";
+}
+.flaticon-spoon4:before {
+	content: "\e07f";
+}
+.flaticon-sushi2:before {
+	content: "\e080";
+}
+.flaticon-sushi3:before {
+	content: "\e081";
+}
+.flaticon-sushi6:before {
+	content: "\e082";
+}
+.flaticon-sydney:before {
+	content: "\e083";
+}
+.flaticon-taco:before {
+	content: "\e084";
+}
+.flaticon-tacos:before {
+	content: "\e085";
+}
+.flaticon-tai3:before {
+	content: "\e086";
+}
+.flaticon-taiwan:before {
+	content: "\e087";
+}
+.flaticon-tomato3:before {
+	content: "\e088";
+}
+.flaticon-tomato4:before {
+	content: "\e089";
+}
+.flaticon-totopos:before {
+	content: "\e08a";
+}
+.flaticon-tower3:before {
+	content: "\e08b";
+}
+.flaticon-turkey:before {
+	content: "\e08c";
+}
+.flaticon-wheat10:before {
+	content: "\e08d";
+}
+.flaticon-wheat2:before {
+	content: "\e08e";
+}
+.flaticon-wheat5:before {
+	content: "\e08f";
+}
+.flaticon-wheat5.desc-icon:before {
+	content: "\e08f";
+	font-size:25px;
+	color:#5f5f5f;
+}
+.flaticon-wheat6:before {
+	content: "\e090";
+}
+.flaticon-wheat6.desc-icon:before {
+	content: "\e090";
+	font-size:25px;
+	color:#5f5f5f;
+}
+.flaticon-wheat7:before {
+	content: "\e091";
+}
+.flaticon-world90:before {
+	content: "\e092";
+}
