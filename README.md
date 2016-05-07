@@ -5,7 +5,7 @@ Culinary arts (Self-owned project)
 <img src="/img_demonst/pic1.jpg" width="1000">
 
 # Index iphone6
-<img src="/img_demonst/pic_iphone.png" width="320">
+<img src="/img_demonst/pic_iphone.jpg" width="320">
 
 # Ingredients
 <img src="/img_demonst/pic2.jpg" width="1000">
